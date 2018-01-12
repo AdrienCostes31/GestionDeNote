@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.ModifierMdpController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: f2e6da;">
+         <children>
+            <Label layoutX="77.0" layoutY="14.0" text="Choisissez votre nouveau mot de passe" />
+            <Button fx:id="btn_valid" layoutX="280.0" layoutY="146.0" mnemonicParsing="false" onAction="#btnValider" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Valider" />
+            <Label layoutX="32.0" layoutY="51.0" text="Nouveau mot de passe :" />
+            <Label layoutX="32.0" layoutY="99.0" text="Confirmation :" />
+            <PasswordField fx:id="confirm" layoutX="187.0" layoutY="95.0" />
+            <PasswordField fx:id="newMdp" layoutX="187.0" layoutY="47.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

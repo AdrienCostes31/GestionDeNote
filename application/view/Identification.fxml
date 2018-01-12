@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.IdentificationController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: f2e6da;">
+         <children>
+            <Label id="lbl_identifiant" layoutX="173.0" layoutY="23.0" text="Identifiant" />
+            <Label id="lbl_mdp" layoutX="164.0" layoutY="92.0" text="Mot de passe" />
+            <TextField id="identifiant" fx:id="identifiant" layoutX="126.0" layoutY="56.0" />
+            <PasswordField id="password" fx:id="password" layoutX="126.0" layoutY="127.0" />
+            <Button fx:id="btn_valider" layoutX="324.0" layoutY="161.0" mnemonicParsing="false" onAction="#affichMenuPrincipal" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Se connecter" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

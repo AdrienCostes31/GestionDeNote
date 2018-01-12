@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: f2e6da;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.AfficherMoyenneController">
+   <children>
+      <Label layoutX="35.0" layoutY="35.0" text="Choisissez un contrôle :" />
+      <Button fx:id="btn_valid" layoutX="334.0" layoutY="161.0" mnemonicParsing="false" onAction="#valider" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Valider" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.AjouterNoteController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: f2e6da;">
+         <children>
+            <Label layoutX="90.0" layoutY="27.0" text="Choisissez le fichier contenant le contrôle" />
+            <Button fx:id="btn_parcour" layoutX="186.0" layoutY="143.0" mnemonicParsing="false" onAction="#parcourFichier" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Parcourir..." />
+            <TextField fx:id="nomFich" editable="false" layoutX="186.0" layoutY="73.0" />
+            <Button fx:id="btn_valid" layoutX="281.0" layoutY="143.0" mnemonicParsing="false" onAction="#valider" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Valider" />
+            <Label layoutX="40.0" layoutY="77.0" text="Chemin du fichier :" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

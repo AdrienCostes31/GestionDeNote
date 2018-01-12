@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.MenuPrincipalController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <SplitPane prefHeight="400.0" prefWidth="300.0">
+               <items>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: f2e6da;">
+                           <children>
+                              <Label alignment="CENTER" layoutX="88.0" layoutY="5.0" style="-fx-font-weight: bold;" text="Gestion des étudiants" underline="true" />
+                              <Button fx:id="btn_ajoutEtudiant" layoutX="58.0" layoutY="73.0" mnemonicParsing="false" onAction="#ajoutPromotion" prefHeight="25.0" prefWidth="182.0" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Ajouter une liste d'étudiants" />
+                              <Button fx:id="btn_supprEtudiant" disable="true" layoutX="59.0" layoutY="130.0" mnemonicParsing="false" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Supprimer une liste d'étudiants" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: f2e6da;">
+                           <children>
+                              <Label layoutX="95.0" layoutY="5.0" style="-fx-font-weight: bold;" text="Gestion des relevés" underline="true" />
+                              <Button fx:id="btn_genererReleve" layoutX="58.0" layoutY="63.0" mnemonicParsing="false" onAction="#genererReleves" prefHeight="25.0" prefWidth="183.0" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Générer une relevé de notes" />
+                              <Button fx:id="btn_genererTabl" disable="true" layoutX="58.0" layoutY="121.0" mnemonicParsing="false" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Générer un tableau synthétique" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </items>
+            </SplitPane>
+            <SplitPane layoutX="300.0" prefHeight="400.0" prefWidth="300.0">
+               <items>
+                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: f2e6da;">
+                           <children>
+                              <Label layoutX="99.0" layoutY="5.0" style="-fx-font-weight: bold;" text="Gestion des notes" underline="true" />
+                              <Button fx:id="btn_ajouterNote" layoutX="51.0" layoutY="37.0" mnemonicParsing="false" onAction="#ajoutNote" prefHeight="25.0" prefWidth="196.0" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Ajouter des notes" />
+                              <Button fx:id="btn_modifNote" disable="true" layoutX="51.0" layoutY="146.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="196.0" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Modifier des notes" />
+                              <Button fx:id="btn_affMoyenneCtrl" layoutX="51.0" layoutY="73.0" mnemonicParsing="false" onAction="#afficherMoyenne" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Afficher la moyenne d'un contrôle" />
+                              <Button fx:id="btnSuppr" layoutX="51.0" layoutY="109.0" mnemonicParsing="false" onAction="#supprCtrl" prefHeight="26.0" prefWidth="196.0" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Supprimer un contrôle" />
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: f2e6da;">
+                           <children>
+                              <Button fx:id="btnQuitter" layoutX="194.0" layoutY="121.0" mnemonicParsing="false" onAction="#quitter" style="-fx-background-color: cc7a5b;" text="Quitter" textFill="WHITE" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+                              <Button fx:id="btnChgMdp" layoutX="51.0" layoutY="63.0" mnemonicParsing="false" onAction="#changerMdp" style="-fx-background-color: d8b491; -fx-border-color: af855d; -fx-border-radius: 2;" text="Changer de mot de passe" />
+                              <Label layoutX="127.0" layoutY="5.0" style="-fx-font-weight: bold;" text="Options" underline="true" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
